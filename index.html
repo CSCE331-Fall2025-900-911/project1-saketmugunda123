@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
+	<title>Home Page</title>
+
 <head>
 	<title>Home Page</title>
+	<link rel="stylesheet" href="firstSketch.css">
 </head>
 <body>
-        <div align="center">
-        <table>
-            <tr>
-				<td><a href="index.html"><button style="width:120px; height:50px;">Home</button></a></td>
-				<td><a href="qualifications.html"><button style="width:120px; height:50px;">Qualifications</button></a></td>
-				<td><a href="portfolio.html"><button style="width:120px; height:50px;">Portfolio</button></a></td>
-				<td><a href="service.html"><button style="width:120px; height:50px;">Service</button></a></td>
-				<td><a href="genai.html"><button style="width:120px; height:50px;">AI Page</button></a></td>
-            </tr>
-        </table>
-    </div>
-    <br>
+	<div align="center">
+		<table>
+			<tr>
+				<td><a href="index.html"><button>Home</button></a></td>
+				<td><a href="qualifications.html"><button>Qualifications</button></a></td>
+				<td><a href="portfolio.html"><button>Portfolio</button></a></td>
+				<td><a href="service.html"><button>Service</button></a></td>
+				<td><a href="genai.html"><button>AI Page</button></a></td>
+			</tr>
+		</table>
+	</div>
+	<br>
 
 	<div align="center">
-		<!-- Circular image (use a placeholder src for now) -->
-		<img src="SaketMugundaHeadShot.jpg" alt="Headshot" width="150" height="150" style="border-radius: 50%;">
-		<br><br>
-		<!-- Big Bold Heading -->
-		<h1><b>Hello I am Saket Mugunda</b></h1>
-		<!-- Description -->
-		<div>
-			<p>This is a short description about me. Welcome to my personal website!</p>
+		<div class="intro-flex">
+			<div class="intro-img">
+				<img src="SaketMugundaHeadShot.jpg" alt="Headshot" class="headshot">
+			</div>
+			<div class="intro-text">
+				<h2><b>Hello I am Saket Mugunda, a Texas A&M Computer Science Honors student looking to use emerging technologies to solve challenging problems.</b></h2>
+			</div>
 		</div>
 	</div>
 	<br>
 	<!-- What I Bring Section -->
 	<div align="center">
-		<h2>What I Bring</h2>
-		<table>
-			<tr>
-				<td>
-					<button style="width:150px; height:80px;">Projects</button>
-				</td>
-				<td>
-					<button style="width:150px; height:80px;">Resume</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<button style="width:150px; height:80px;">Service</button>
-				</td>
-				<td>
-					<button style="width:150px; height:80px;">AI Page</button>
-				</td>
-			</tr>
-		</table>
+		<h1>What I Bring</h1>
+		<div class="what-bring-row">
+			<a href="portfolio.html"><button class="what-bring-btn projects-btn">Projects</button></a>
+			<a href="qualifications.html"><button class="what-bring-btn resume-btn">Resume</button></a>
+			<a href="service.html"><button class="what-bring-btn service-btn">Community Work</button></a>
+			<a href="genai.html"><button class="what-bring-btn ai-btn">AI</button></a>
+		</div>
 	</div>
+
 	<br>
 	<!-- Favorite Highlight Section -->
 	<div align="center">
-		<h2>Favorite Highlight</h2>
-		<div style="border:1px solid black; width:300px; padding:10px;">
-			<p>My favorite project is an automated feed generator</p>
+		<h1>Favorite Highlight</h1>
+		<div class="favorite-highlight">
+			<p class="favorite-project-big">My favorite project was an automated feed generator I created for internal clients at Home Depot!</p>
 		</div>
 	</div>
 	<br>
+
+	<!-- Fun Facts Section -->
+	<div align="center">
+		<h1>Fun Facts</h1>
+		<div class="fun-facts">
+			<div class="fun-fact-card">I am a Dallas Mavericks and Green Bay Packers fan!</div>
+			<div class="fun-fact-card">I have traveled to 6 continents (hoping for a 7th).</div>
+		</div>
+	</div>
+	<br>
+
 	<!-- Footer -->
-	<footer align="center">
+	<footer>
 		<p>Contact: saketmugunda123@gmail.com</p>
 	</footer>
 </body>

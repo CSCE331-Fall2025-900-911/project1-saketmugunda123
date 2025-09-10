@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="firstSketch.css">
 </head>
 <body>
-             <div align="center">
+    <div align="center">
         <table>
             <tr>
-				<td><a href="index.html"><button style="width:120px; height:50px;">Home</button></a></td>
-				<td><a href="qualifications.html"><button style="width:120px; height:50px;">Qualifications</button></a></td>
-				<td><a href="portfolio.html"><button style="width:120px; height:50px;">Portfolio</button></a></td>
-				<td><a href="service.html"><button style="width:120px; height:50px;">Service</button></a></td>
-				<td><a href="genai.html"><button style="width:120px; height:50px;">AI Page</button></a></td>
+                <td><a href="index.html"><button>Home</button></a></td>
+                <td><a href="qualifications.html"><button>Qualifications</button></a></td>
+                <td><a href="portfolio.html"><button>Portfolio</button></a></td>
+                <td><a href="service.html"><button>Service</button></a></td>
+                <td><a href="genai.html"><button>AI Page</button></a></td>
             </tr>
         </table>
     </div>
@@ -24,7 +26,7 @@
     <div align="center">
         <table>
             <tr>
-                <td style="border:1px solid black; width:600px; height:180px; vertical-align:top;">
+                <td class="project-block">
                     <h3>NBA Prop Predictor</h3>
                     <p><b>July 2025 – Present</b><br>
                     Creator | Python, ML, LightGBM, Scikit-learn, Numpy, Pandas, APIs, Agentic AI, LangChain, AWS</p>
@@ -34,15 +36,15 @@
                         <li>Engineered a conversational AI agent with LangChain that processes natural language queries to deliver personalized prop recommendations for specific games, teams, or players.</li>
                     </ul>
                 </td>
-                <td style="border:1px solid black; width:200px; height:180px; text-align:center; vertical-align:middle;">
-                    <a href="https://github.com/yourusername/project1" target="_blank">
-                        <button style="width:150px; height:60px;">GitHub</button>
+                <td class="project-github">
+                    <a href="https://github.com/saketmugunda123/LangChain-Sports-Predictor" target="_blank">
+                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
                     </a>
                 </td>
             </tr>
             <tr><td colspan="2" style="height:30px;"></td></tr>
             <tr>
-                <td style="border:1px solid black; width:600px; height:180px; vertical-align:top;">
+                <td class="project-block">
                     <h3>Lecture Assistant (Build4Good Hackathon)</h3>
                     <p><b>March 2024 – March 2024</b><br>
                     Co-Creator | Python, React, NumPy, Pandas, DeepFace, OpenCV, APIs</p>
@@ -51,18 +53,53 @@
                         <li>Integrated a Python-based backend with a React front-end to ensure seamless, real-time data communication.</li>
                     </ul>
                 </td>
-                <td style="border:1px solid black; width:200px; height:180px; text-align:center; vertical-align:middle;">
-                    <a href="https://github.com/yourusername/project2" target="_blank">
-                        <button style="width:150px; height:60px;">GitHub</button>
+                <td class="project-github">
+                    <a href="https://github.com/saketmugunda123/build-for-good" target="_blank">
+                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
                     </a>
                 </td>
             </tr>
             <!-- Add more projects as needed -->
+            <tr><td colspan="2" style="height:30px;"></td></tr>
+            <tr>
+                <td class="project-block">
+                    <h3>Insurance Cost Predictor</h3>
+                    <p><b>2024</b><br>
+                    Creator | Python, Machine Learning, Logistic Regression, Numpy, Pandas, Scikit-learn</p>
+                    <ul>
+                        <li>Developed a logistic regression model to predict insurance costs for patients based on demographic and health data.</li>
+                        <li>Utilized Python and Scikit-learn to preprocess data, train the model, and evaluate prediction accuracy.</li>
+                        <li>Enabled more accurate cost estimation for insurance providers and improved transparency for patients.</li>
+                    </ul>
+                </td>
+                <td class="project-github">
+                    <a href="https://github.com/saketmugunda123/Insurance-Logistics-Regression" target="_blank">
+                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
+                    </a>
+                </td>
+            </tr>
+            <tr><td colspan="2" style="height:30px;"></td></tr>
+            <tr>
+                <td class="project-block">
+                    <h3>Routr</h3>
+                    <p><b>January 2024 – January 2024</b><br>
+                    Creator | Python, ML, LightGBM, Flask, C++, Numpy, Pandas, LightGBM, OpenCV, Object Oriented Programming</p>
+                    <ul>
+                        <li>Functional full-stack application hosted locally. When given a current/final destination and a time frame, the app selects the safest route at the safest time to depart by assessing each departure time a safety score and picking the best score.</li>
+                        <li>Safety score is determined by an ML model that was trained on a Kaggle dataset for vehicle safety.</li>
+                    </ul>
+                </td>
+                <td class="project-github">
+                    <a href="https://github.com/saketmugunda123/Routr" target="_blank">
+                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
+                    </a>
+                </td>
+            </tr>
         </table>
     </div>
     <br>
     <!-- Footer -->
-    <footer align="center">
+    <footer>
         <p>Contact: saketmugunda123@gmail.com</p>
     </footer>
 </body>
