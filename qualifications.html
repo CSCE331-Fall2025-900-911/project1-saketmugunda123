@@ -1,69 +1,110 @@
 <!DOCTYPE html>
 <html>
+<head>
     <title>Qualifications</title>
+    <link id="main-style" rel="stylesheet" href="firstSketch.css">
 </head>
 <body>
-
-            <head>
-                <title>Qualifications</title>
-                <link rel="stylesheet" href="firstSketch.css">
-            </head>
-            <body>
-                <div align="center">
-                    <table>
-                        <tr>
-                            <td><a href="index.html"><button>Home</button></a></td>
-                            <td><a href="qualifications.html"><button>Qualifications</button></a></td>
-                            <td><a href="portfolio.html"><button>Portfolio</button></a></td>
-                            <td><a href="service.html"><button>Service</button></a></td>
-                            <td><a href="genai.html"><button>AI Page</button></a></td>
-                        </tr>
-                    </table>
-                </div>
+    <div class="top-buttons" align="center">
+        <table>
+            <tr>
+                <td><a href="index.html"><button>Home</button></a></td>
+                <td><a href="qualifications.html"><button>Qualifications</button></a></td>
+                <td><a href="portfolio.html"><button>Portfolio</button></a></td>
+                <td><a href="service.html"><button>Service</button></a></td>
+                <td><a href="genai.html"><button>AI Page</button></a></td>
+                <td><a onclick="toggleStyle()"><button>Toggle Style</button></a></td>
+            </tr>
+        </table>
+    </div>
                 <br>
-  
                 <div align="center">
                     <h1><b>Qualifications</b></h1>
                 </div>
-                <br>
-
+                <div class="mainBoxQualifications">
+                
                 <!-- Display Resume PDF -->
-                <div align="center">
-                <embed src="Saket_Mugunda_Resume_2026.pdf" type="application/pdf" width="1000" height="800">
+                <div class="qualLeftContent" align="center">
+                <div class="resume-container">
+                <iframe src="https://drive.google.com/file/d/10kug9KmvG063DFl4tkBjZ6edHlsJpbR4/preview" width="800" height="700" allow="autoplay"></iframe>
+                </div>
                 </div>
                 <br>
 
                 <!-- Technical Skills and Areas of Interest -->
-                <div align="center">
+                <div class="qualRightContent" align="center">
                     <table>
                         <tr>
-                            <td class="qual-block">
+                            <td class="tech-skills-block">
                                     <h3>Technical Skills</h3>
                                     <ul>
-                                        <li>Python</li>
-                                        <li>Java</li>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
+                                        <li><strong>Core:</strong> Python, Java, JavaScript, SQL, C++</li>
+                                        <li><strong>AI/ML:</strong> LLMs, LangChain, BERT, Scikit-learn, PyTorch</li>
+                                        <li><strong>Web:</strong> React, Angular, TypeScript, NodeJS</li>
+                                        <li><strong>Cloud/DevOps:</strong> AWS, Docker, Kubernetes, Google Cloud, Spinnaker</li>
+                                        <li><strong>Tools:</strong> Git, Linux</li>
                                     </ul>
                             </td>
                             <td class="qual-block">
                                 <h3>Areas of Interest</h3>
-                                <ul>
-                                    <li>Artificial Intelligence</li>
-                                    <li>Web Development</li>
-                                    <li>Data Science</li>
-                                    <li>Machine Learning</li>
-                                    <li>Software Engineering</li>
-                                </ul>
+                                
+                                <h4>Machine Learning</h4>
+                                <p>My passion for machine learning originated from my love for basketball and the NBA's analytics revolution. I was fascinated by using ML to analyze complex data patterns to "solve" the sport, but soon realized its potential extends far beyond the court. Knowing that, I am excited to be at the forefront of this field as it continues to shape our futures.</p>
+                                
+                                <h4>Full Stack Development</h4>
+                                <p>In the startup world, you have to be able to build things from the ground up. I've focused on and developed a passion for full stack development because it gives you the power to turn an idea into a real, working application. It's the most direct way to create a product and actually get it into people's hands.</p>
+                                
+                                <h4>Agentic AI</h4>
+                                <p>I am extremely interested in Agentic AI because it's the first proper step toward an AI integrated society. Rather than the regular LLM that serves as a glorified search engine, Agentic AI has revolutionized the tech space because it enables AI to not only think, but perform human-like actions. It truly is the cutting edge of AI progression.</p>
                             </td>
                         </tr>
                     </table>
                 </div>
+                </div>
                 <br>
                 <!-- Footer -->
                 <footer>
-                    <p>Contact: saketmugunda123@gmail.com</p>
-                </footer>
-            </body>
-            </html>
+                    <div class="contact-info">
+                        <a href="https://gmail.com" target="_blank" class="contact-item">
+                            <span>📧</span>
+                            <span>saketmugunda123@gmail.com</span>
+                        </a>
+                        <a href="https://www.tamu.edu/index.html" target="_blank" class="contact-item">
+                            <span>🎓</span>
+                            <span>Texas A&M University</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saket-mugunda/" target="_blank" class="contact-item">
+                            <img src="LinkedInLogo.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+            </footer>
+
+            <script>
+                // Function to toggle between CSS styles
+                function toggleStyle() {
+                    const styleLink = document.getElementById('main-style');
+                    const currentStyle = styleLink.getAttribute('href');
+                    
+                    if (currentStyle === 'secondSketch.css') {
+                        styleLink.setAttribute('href', 'firstSketch.css');
+                        localStorage.setItem('selectedStyle', 'firstSketch.css');
+                    } else {
+                        styleLink.setAttribute('href', 'secondSketch.css');
+                        localStorage.setItem('selectedStyle', 'secondSketch.css');
+                    }
+                }
+
+                // Function to load the saved style on page load
+                function loadSavedStyle() {
+                    const savedStyle = localStorage.getItem('selectedStyle');
+                    if (savedStyle) {
+                        document.getElementById('main-style').setAttribute('href', savedStyle);
+                    }
+                }
+
+                // Load saved style when page loads
+                document.addEventListener('DOMContentLoaded', loadSavedStyle);
+            </script>
+        </body>
+        </html>

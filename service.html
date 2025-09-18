@@ -1,74 +1,211 @@
 <!DOCTYPE html>
 <html>
+
+<head>
     <title>Service</title>
+    <link id="main-style" rel="stylesheet" href="secondSketch.css">
 </head>
 <body>
+    <div class="top-buttons" align="center">
+        <table>
+            <tr>
+                <td><a href="index.html"><button>Home</button></a></td>
+                <td><a href="qualifications.html"><button>Qualifications</button></a></td>
+                <td><a href="portfolio.html"><button>Portfolio</button></a></td>
+                <td><a href="service.html"><button>Service</button></a></td>
+                <td><a href="genai.html"><button>AI Page</button></a></td>
+                <td><a onclick="toggleStyle()"><button>Toggle Style</button></a></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div align="center">
+        <h1><b>Service</b></h1>
+    </div>
+    <br>
+    <!-- Service Boxes -->
+    <div class="mainBoxService">
+    <div class="service-grid">
+        <div class="service-box" onclick="openModal('serviceModal1')">
+            <h3>North South Foundation</h3>
+            <p>Academic Excellence & Educational Opportunities</p>
+            <span class="click-hint">Click to learn more</span>
+        </div>
+        
+        <div class="service-box" onclick="openModal('serviceModal2')">
+            <h3>Round Rock Serving Center</h3>
+            <p>Community Support & Food Pantry Service</p>
+            <span class="click-hint">Click to learn more</span>
+        </div>
+        
+        <div class="service-box" onclick="openModal('serviceModal3')">
+            <h3>Educationist Tutoring</h3>
+            <p>Free Tutoring & Educational Support</p>
+            <span class="click-hint">Click to learn more</span>
+        </div>
+        
+        <div class="service-box" onclick="openModal('serviceModal4')">
+            <h3>Community Beautification</h3>
+            <p>City of Atlanta & Home Depot Partnership</p>
+            <span class="click-hint">Click to learn more</span>
+        </div>
+    </div>
 
-    <head>
-        <title>Service</title>
-        <link rel="stylesheet" href="firstSketch.css">
-    </head>
-    <body>
-        <div align="center">
-            <table>
-                <tr>
-                    <td><a href="index.html"><button>Home</button></a></td>
-                    <td><a href="qualifications.html"><button>Qualifications</button></a></td>
-                    <td><a href="portfolio.html"><button>Portfolio</button></a></td>
-                    <td><a href="service.html"><button>Service</button></a></td>
-                    <td><a href="genai.html"><button>AI Page</button></a></td>
-                </tr>
-            </table>
+    <!-- Modals -->
+    <div id="serviceModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('serviceModal1')">&times;</span>
+            <h2>North South Foundation</h2>
+            <p><b>Volunteer Judge | Spelling Bee & Math Bee Competitions</b></p>
+            <p>The North South Foundation is a non-profit organization dedicated to fostering educational excellence and providing opportunities for students. Founded in 1989, this volunteer-driven foundation has a dual mission: to promote academic achievement among Indian students in the United States and to offer scholarships to students in India.</p>
+            <ul>
+                <li><b>Role:</b> Volunteer Judge for spelling bee and math bee competitions</li>
+                <li><b>Responsibilities:</b> Evaluated student performances on subject knowledge, critical thinking, and presentation skills</li>
+                <li><b>Impact:</b> Contributed to nurturing the intellectual growth of the next generation</li>
+                <li><b>Experience:</b> Witnessed impressive dedication and talent of young students competing at high levels</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://www.northsouth.org/" target="_blank">
+                    <button class="github-btn">
+                        <img src="NorthSouthFoundation.png" alt="NSF">
+                        Visit Organization
+                    </button>
+                </a>
+            </div>
         </div>
-        <br>
-        <div align="center">
-            <h1><b>Service</b></h1>
+    </div>
+
+    <div id="serviceModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('serviceModal2')">&times;</span>
+            <h2>Round Rock Serving Center</h2>
+            <p><b>Volunteer | Food Pantry & Donation Support</b></p>
+            <p>The Round Rock Serving Center is a non-profit organization dedicated to providing support to struggling individuals and families in the community. For over 35 years, this volunteer-driven charity has served as a safety net for the community.</p>
+            <ul>
+                <li><b>Services:</b> Food pantry, thrift store, and financial assistance programs</li>
+                <li><b>Role:</b> Volunteer for food pantry operations and donation sorting</li>
+                <li><b>Responsibilities:</b> Organized food items, stocked shelves, and assisted families in selecting nutritious groceries</li>
+                <li><b>Impact:</b> Directly supported community members facing hardship and food insecurity</li>
+                <li><b>Experience:</b> Gained firsthand understanding of community needs and the importance of local support networks</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://www.rrasc.org/" target="_blank">
+                    <button class="github-btn">
+                        <img src="RoundRockServingCenter.jpg" alt="RRSC">
+                        Visit Organization
+                    </button>
+                </a>
+            </div>
         </div>
-        <br>
-        <!-- Service Blocks -->
-        <div align="center">
-            <table>
-                <tr>
-                    <td class="service-block">
-                        <h3>North South Foundation</h3>
-                        <p>The North South Foundation is a non-profit organization dedicated to fostering educational excellence and providing opportunities for students. Founded in 1989, this volunteer-driven foundation has a dual mission: to promote academic achievement among Indian students in the United States and to offer scholarships to students in India.<br>
-                            <br>I had the opportunity to volunteer as a judge for the North South Foundation, contributing directly to their mission of pursuing academic excellence. During my volunteering, I was responsible for evaluating student performances in both the spelling bee and the math bee. This role involved assessing participants on their subject knowledge, critical thinking, and presentation skills. It was inspiring to witness the impressive dedication and talent of the young students, and I was proud to play a small part in an organization that nurtures the intellectual growth of the next generation.</p>
-                    </td>
-                    <td class="service-img-block">
-                        <a href="https://www.northsouth.org/" class="service-link" target="_blank"><img src="NorthSouthFoundation.png" alt="North South Foundation" class="service-img"></a>
-                        <div style="margin-top:16px; font-size:1.1rem; color:#005fa3;">(click on photo for more info)</div>
-                    </td>
-                </tr>
-                <tr><td colspan="2" style="height:30px;"></td></tr>
-                <tr>
-                    <td class="service-block">
-                        <h3>Round Rock Serving Center</h3>
-                        <p>The Round Rock Serving Center is a non-profit organization dedicated to providing support to struggling individuals and families in the community. For over 35 years, this volunteer-driven charity has served as a safety net for the community. Its primary services include a food pantry, a thrift store providing clothing and household goods, and financial assistance programs for utilities, rent, and prescriptions.<br><br>I had the opportunity to volunteer at the Round Rock Serving Center, contributing directly to their mission of supporting community members facing hardship. During my volunteering, I was responsible for sorting incoming donations and assisting clients in the food pantry. This role involved organizing food items to stock the shelves and helping families navigate the pantry to select nutritious groceries for their households. It was a humbling experience to see the direct impact of this work, and I was proud to play a small part in an organization that provides vital resources for our neighbors in need.</p>
-                    </td>
-                    <td class="service-img-block">
-                        <a href="https://www.rrasc.org/" class="service-link" target="_blank"><img src="RoundRockServingCenter.jpg" alt="Round Rock Serving Center" class="service-img"></a>
-                        <div style="margin-top:16px; font-size:1.1rem; color:#005fa3;">(click on photo for more info)</div>
-                    </td>
-                </tr>
-                <tr><td colspan="2" style="height:30px;"></td></tr>
-                <tr>
-                    <td class="service-block">
-                        <h3>Educationist Tutoring</h3>
-                        <p>Educationist Tutoring is a free tutoring service that provides personalized learning solutions for students. The organization's mission is to create achievement and build confidence by offering customized, one-on-one tutoring for those who lack resources. Focusing on students from elementary through high school, its services cover core subjects like math, science, and language arts, as well as standardized test preparation. The center prides itself on creating tailored educational plans that address each student's unique learning style and academic goals.<br><br>I had the opportunity to work as the Social Media Manager and as a tutor at Educationist Tutoring. Specifically, as a tutor, I was matched with a student named Jayden, where I helped him prep for his high school acceptance exam. It was deeply rewarding to witness Jayden’s confidence grow after each session. The silver lining of it all is that Jayden ended up acing his entrance exam and got into his first-choice school.</p>
-                    </td>
-                    <td class="service-img-block">
-                        <!-- Add an image for Educationist Tutoring if available -->
-                        <br>
-                        <a href="https://educationisttutoring.org/" class="service-link" target="_blank"><img src="educationist_tutoring_logo.jpg" alt="Educationist Tutoring" class="service-img"></a>
-                        <div style="margin-top:16px; font-size:1.1rem; color:#005fa3;">(click on photo for more info)</div>
-                    </td>
-                </tr>
-            </table>
+    </div>
+
+    <div id="serviceModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('serviceModal3')">&times;</span>
+            <h2>Educationist Tutoring</h2>
+            <p><b>Social Media Manager & Tutor</b></p>
+            <p>Educationist Tutoring is a free tutoring service that provides personalized learning solutions for students. The organization's mission is to create achievement and build confidence by offering customized, one-on-one tutoring for those who lack resources.</p>
+            <ul>
+                <li><b>Focus Areas:</b> Elementary through high school students in math, science, language arts, and standardized test preparation</li>
+                <li><b>Role:</b> Social Media Manager and Personal Tutor</li>
+                <li><b>Student Success:</b> Tutored Jayden for his high school acceptance exam</li>
+                <li><b>Results:</b> Jayden successfully aced his entrance exam and was accepted to his first-choice school</li>
+                <li><b>Impact:</b> Witnessed significant confidence growth and academic improvement in students</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://educationisttutoring.org/" target="_blank">
+                    <button class="github-btn">
+                        <img src="educationist_tutoring_logo.jpg" alt="Educationist">
+                        Visit Organization
+                    </button>
+                </a>
+            </div>
         </div>
-        <br>
-        <!-- Footer -->
-        <footer>
-            <p>Contact: saketmugunda123@gmail.com</p>
-        </footer>
-    </body>
-    </html>
+    </div>
+
+    <div id="serviceModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('serviceModal4')">&times;</span>
+            <h2>Community Beautification</h2>
+            <p><b>Volunteer | Community Beautification</b></p>
+            <p>A collaborative project with the City of Atlanta and The Home Depot to revitalize local public spaces.</p>
+            <ul>
+                <li><b>Project:</b> Park restoration and downtown cleanup initiatives</li>
+                <li><b>Role:</b> Community Project Volunteer</li>
+                <li><b>Responsibilities:</b> Spread mulch, cleaned up park grounds, and assisted with general downtown area beautification</li>
+                <li><b>Impact:</b> Improved the cleanliness and aesthetic appeal of community spaces for public enjoyment</li>
+                <li><b>Experience:</b> Participated in a large-scale civic project and learned about public-private partnerships in community service</li>
+            </ul>
+            <div class="modal-github">
+                <a href="http://atlantaga.gov/government/mayor-s-office/executive-offices/office-of-constituent-services/mayor-s-volunteer-program" target="_blank">
+                    <button class="github-btn">
+                        <img src="Atlanta.png" alt="City of Atlanta">
+                        Learn More
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <a href="https://gmail.com" target="_blank" class="contact-item">
+                <span>📧</span>
+                <span>saketmugunda123@gmail.com</span>
+            </a>
+            <a href="https://www.tamu.edu/index.html" target="_blank" class="contact-item">
+                <span>🎓</span>
+                <span>Texas A&M University</span>
+            </a>
+            <a href="https://www.linkedin.com/in/saket-mugunda/" target="_blank" class="contact-item">
+                <img src="LinkedInLogo.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+
+        // Function to toggle between CSS styles
+        function toggleStyle() {
+            const styleLink = document.getElementById('main-style');
+            const currentStyle = styleLink.getAttribute('href');
+            
+            if (currentStyle === 'secondSketch.css') {
+                styleLink.setAttribute('href', 'firstSketch.css');
+                localStorage.setItem('selectedStyle', 'firstSketch.css');
+            } else {
+                styleLink.setAttribute('href', 'secondSketch.css');
+                localStorage.setItem('selectedStyle', 'secondSketch.css');
+            }
+        }
+
+        // Function to load the saved style on page load
+        function loadSavedStyle() {
+            const savedStyle = localStorage.getItem('selectedStyle');
+            if (savedStyle) {
+                document.getElementById('main-style').setAttribute('href', savedStyle);
+            }
+        }
+
+        // Load saved style when page loads
+        document.addEventListener('DOMContentLoaded', loadSavedStyle);
+    </script>
+</body>
+</html>

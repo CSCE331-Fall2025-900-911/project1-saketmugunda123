@@ -3,10 +3,10 @@
 
 <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="firstSketch.css">
+    <link id="main-style" rel="stylesheet" href="firstSketch.css">
 </head>
 <body>
-    <div align="center">
+    <div class="top-buttons" align="center">
         <table>
             <tr>
                 <td><a href="index.html"><button>Home</button></a></td>
@@ -14,6 +14,7 @@
                 <td><a href="portfolio.html"><button>Portfolio</button></a></td>
                 <td><a href="service.html"><button>Service</button></a></td>
                 <td><a href="genai.html"><button>AI Page</button></a></td>
+                <td><a onclick="toggleStyle()"><button>Toggle Style</button></a></td>
             </tr>
         </table>
     </div>
@@ -22,85 +23,237 @@
         <h1><b>Portfolio</b></h1>
     </div>
     <br>
-    <!-- Project Blocks -->
-    <div align="center">
-        <table>
-            <tr>
-                <td class="project-block">
-                    <h3>NBA Prop Predictor</h3>
-                    <p><b>July 2025 – Present</b><br>
-                    Creator | Python, ML, LightGBM, Scikit-learn, Numpy, Pandas, APIs, Agentic AI, LangChain, AWS</p>
-                    <ul>
-                        <li>Architected a scalable full-stack analytics platform on AWS, processing 10k+ NBA stats to generate daily prop picks.</li>
-                        <li>Achieved 63% accuracy in forecasting player performance against sportsbook lines by engineering the core prediction engine with a deep neural network.</li>
-                        <li>Engineered a conversational AI agent with LangChain that processes natural language queries to deliver personalized prop recommendations for specific games, teams, or players.</li>
-                    </ul>
-                </td>
-                <td class="project-github">
-                    <a href="https://github.com/saketmugunda123/LangChain-Sports-Predictor" target="_blank">
-                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
-                    </a>
-                </td>
-            </tr>
-            <tr><td colspan="2" style="height:30px;"></td></tr>
-            <tr>
-                <td class="project-block">
-                    <h3>Lecture Assistant (Build4Good Hackathon)</h3>
-                    <p><b>March 2024 – March 2024</b><br>
-                    Co-Creator | Python, React, NumPy, Pandas, DeepFace, OpenCV, APIs</p>
-                    <ul>
-                        <li>Engineered a full-stack application that provides real-time feedback to teachers, leveraging the DeepFace neural network to analyze student emotions and dynamically adjust lecture pace.</li>
-                        <li>Integrated a Python-based backend with a React front-end to ensure seamless, real-time data communication.</li>
-                    </ul>
-                </td>
-                <td class="project-github">
-                    <a href="https://github.com/saketmugunda123/build-for-good" target="_blank">
-                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
-                    </a>
-                </td>
-            </tr>
-            <!-- Add more projects as needed -->
-            <tr><td colspan="2" style="height:30px;"></td></tr>
-            <tr>
-                <td class="project-block">
-                    <h3>Insurance Cost Predictor</h3>
-                    <p><b>2024</b><br>
-                    Creator | Python, Machine Learning, Logistic Regression, Numpy, Pandas, Scikit-learn</p>
-                    <ul>
-                        <li>Developed a logistic regression model to predict insurance costs for patients based on demographic and health data.</li>
-                        <li>Utilized Python and Scikit-learn to preprocess data, train the model, and evaluate prediction accuracy.</li>
-                        <li>Enabled more accurate cost estimation for insurance providers and improved transparency for patients.</li>
-                    </ul>
-                </td>
-                <td class="project-github">
-                    <a href="https://github.com/saketmugunda123/Insurance-Logistics-Regression" target="_blank">
-                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
-                    </a>
-                </td>
-            </tr>
-            <tr><td colspan="2" style="height:30px;"></td></tr>
-            <tr>
-                <td class="project-block">
-                    <h3>Routr</h3>
-                    <p><b>January 2024 – January 2024</b><br>
-                    Creator | Python, ML, LightGBM, Flask, C++, Numpy, Pandas, LightGBM, OpenCV, Object Oriented Programming</p>
-                    <ul>
-                        <li>Functional full-stack application hosted locally. When given a current/final destination and a time frame, the app selects the safest route at the safest time to depart by assessing each departure time a safety score and picking the best score.</li>
-                        <li>Safety score is determined by an ML model that was trained on a Kaggle dataset for vehicle safety.</li>
-                    </ul>
-                </td>
-                <td class="project-github">
-                    <a href="https://github.com/saketmugunda123/Routr" target="_blank">
-                        <img src="GitHub-logo.jpg" alt="GitHub" style="width:175px; height:175px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.12); cursor:pointer;" />
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <!-- Project Boxes -->
+    <div class="mainBoxPortfolio">
+        <div class="project-grid">
+            <div class="project-box" onclick="openModal('modal1')">
+                <h3>NBA Prop Predictor</h3>
+                <p>Machine Learning & AI Platform</p>
+                <span class="click-hint">Click to learn more</span>
+            </div>
+
+            <div class="project-box" onclick="openModal('modal2')">
+                <h3>Home Depot Projects</h3>
+                <p>Software Engineer Intern</p>
+                <span class="click-hint">Click to learn more</span>
+            </div>
+
+            <div class="project-box" onclick="openModal('modal3')">
+                <h3>Clocr Startup Projects</h3>
+                <p>Digital Asset Management</p>
+                <span class="click-hint">Click to learn more</span>
+            </div>
+            
+            <div class="project-box" onclick="openModal('modal4')">
+                <h3>Lecture Assistant</h3>
+                <p>Build4Good Hackathon Project</p>
+                <span class="click-hint">Click to learn more</span>
+            </div>
+            
+            <div class="project-box" onclick="openModal('modal5')">
+                <h3>Insurance Cost Predictor</h3>
+                <p>Machine Learning Regression Model</p>
+                <span class="click-hint">Click to learn more</span>
+            </div>
+            
+            <div class="project-box" onclick="openModal('modal6')">
+                <h3>Routr</h3>
+                <p>Safety-Focused Route Planning</p>
+                <span class="click-hint">Click to learn more</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>NBA Prop Predictor</h2>
+            <p><b>July 2025 – Present</b><br>
+            Creator | Python, ML, LightGBM, Scikit-learn, Numpy, Pandas, APIs, Agentic AI, LangChain, AWS</p>
+            <ul>
+                <li>Architected a scalable full-stack analytics platform on AWS, processing 10k+ NBA stats to generate daily prop picks.</li>
+                <li>Achieved 63% accuracy in forecasting player performance against sportsbook lines by engineering the core prediction engine with a deep neural network.</li>
+                <li>Engineered a conversational AI agent with LangChain that processes natural language queries to deliver personalized prop recommendations for specific games, teams, or players.</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://github.com/saketmugunda123/LangChain-Sports-Predictor" target="_blank">
+                    <button class="github-btn">
+                        <img src="GitHub-logo.jpg" alt="GitHub">
+                        View on GitHub
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>The Home Depot - Software Engineer Intern</h2>
+            <p><b>May 2025 – July 2025</b><br>
+            Software Engineer Intern | JavaScript, SQL, GitHub Actions, Git, CI/CD, React, Python, Docker, Kubernetes, Spinnaker, Glean</p>
+            <ul>
+                <li>Owned an end-to-end development of an automated self-service product feed generator, reducing client onboarding lifecycle time from 7 days to 1 day (86%) for 100+ internal clients.</li>
+                <li>Built a comprehensive test suite with 100+ Jest unit and integration tests to guarantee feed integrity.</li>
+                <li>Built a robust CI/CD pipeline to automate builds, testing, Docker containerization, and Kubernetes deployments, achieving zero-downtime deployments across three environments.</li>
+                <li>Engineered training of a BERT-based AI model for product taxonomy, achieving 98% accuracy in classifying over 100k product SKUs into the correct categories/subcategories.</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://www.homedepot.com" target="_blank">
+                    <button class="github-btn">
+                        <img src="HomeDepot.png" alt="Home Depot">
+                         Home Depot
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Clocr - Digital Asset Management Startup</h2>
+            <p><b>April 2024 – December 2024</b><br>
+            Software Engineer Intern | Git, Python, JavaScript, Angular, React, SQL, LLMs, Docker, Kubernetes</p>
+            <ul>
+                <li>Designed and implemented enhanced interactive screens for both B2B and B2C applications, improving overall user experience and contributing to over 100,000 user visits.</li>
+                <li>Assisted in data migration from Pinecone to PostgreSQL, decreasing operational costs by 30%.</li>
+                <li>Worked with dev team centered in India, forging strong communication and interpersonal skills to achieve project goals.</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://clocr.com" target="_blank">
+                    <button class="github-btn">
+                        <img src="Clocr.jpg" alt="Clocr">
+                        Visit Clocr
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Lecture Assistant (Build4Good Hackathon)</h2>
+            <p><b>March 2024 – March 2024</b><br>
+            Co-Creator | Python, React, NumPy, Pandas, DeepFace, OpenCV, APIs</p>
+            <ul>
+                <li>Engineered a full-stack application that provides real-time feedback to teachers, leveraging the DeepFace neural network to analyze student emotions and dynamically adjust lecture pace.</li>
+                <li>Integrated a Python-based backend with a React front-end to ensure seamless, real-time data communication.</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://github.com/saketmugunda123/build-for-good" target="_blank">
+                    <button class="github-btn">
+                        <img src="GitHub-logo.jpg" alt="GitHub">
+                        View on GitHub
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Insurance Cost Predictor</h2>
+            <p><b>2024</b><br>
+            Creator | Python, Machine Learning, Logistic Regression, Numpy, Pandas, Scikit-learn</p>
+            <ul>
+                <li>Developed a logistic regression model to predict insurance costs for patients based on demographic and health data.</li>
+                <li>Utilized Python and Scikit-learn to preprocess data, train the model, and evaluate prediction accuracy.</li>
+                <li>Enabled more accurate cost estimation for insurance providers and improved transparency for patients.</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://github.com/saketmugunda123/Insurance-Logistics-Regression" target="_blank">
+                    <button class="github-btn">
+                        <img src="GitHub-logo.jpg" alt="GitHub">
+                        View on GitHub
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Routr</h2>
+            <p><b>January 2024 – January 2024</b><br>
+            Creator | Python, ML, LightGBM, Flask, C++, Numpy, Pandas, LightGBM, OpenCV, Object Oriented Programming</p>
+            <ul>
+                <li>Functional full-stack application hosted locally. When given a current/final destination and a time frame, the app selects the safest route at the safest time to depart by assessing each departure time a safety score and picking the best score.</li>
+                <li>Safety score is determined by an ML model that was trained on a Kaggle dataset for vehicle safety.</li>
+            </ul>
+            <div class="modal-github">
+                <a href="https://github.com/saketmugunda123/Routr" target="_blank">
+                    <button class="github-btn">
+                        <img src="GitHub-logo.jpg" alt="GitHub">
+                        View on GitHub
+                    </button>
+                </a>
+            </div>
+        </div>
     </div>
     <br>
     <!-- Footer -->
     <footer>
-        <p>Contact: saketmugunda123@gmail.com</p>
+        <div class="contact-info">
+            <a href="https://gmail.com" target="_blank" class="contact-item">
+                <span>📧</span>
+                <span>saketmugunda123@gmail.com</span>
+            </a>
+            <a href="https://www.tamu.edu/index.html" target="_blank" class="contact-item">
+                <span>🎓</span>
+                <span>Texas A&M University</span>
+            </a>
+            <a href="https://www.linkedin.com/in/saket-mugunda/" target="_blank" class="contact-item">
+                <img src="LinkedInLogo.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+        </div>
     </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+
+        // Function to toggle between CSS styles
+        function toggleStyle() {
+            const styleLink = document.getElementById('main-style');
+            const currentStyle = styleLink.getAttribute('href');
+            
+            if (currentStyle === 'secondSketch.css') {
+                styleLink.setAttribute('href', 'firstSketch.css');
+                localStorage.setItem('selectedStyle', 'firstSketch.css');
+            } else {
+                styleLink.setAttribute('href', 'secondSketch.css');
+                localStorage.setItem('selectedStyle', 'secondSketch.css');
+            }
+        }
+
+        // Function to load the saved style on page load
+        function loadSavedStyle() {
+            const savedStyle = localStorage.getItem('selectedStyle');
+            if (savedStyle) {
+                document.getElementById('main-style').setAttribute('href', savedStyle);
+            }
+        }
+
+        // Load saved style when page loads
+        document.addEventListener('DOMContentLoaded', loadSavedStyle);
+    </script>
 </body>
 </html>

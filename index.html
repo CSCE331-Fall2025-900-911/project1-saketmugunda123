@@ -4,30 +4,26 @@
 
 <head>
 	<title>Home Page</title>
-	<link id="main-style" rel="stylesheet" href="firstSketch.css">
+	<link id="main-style" rel="stylesheet" href="secondSketch.css">
 </head>
 <body>
-		<button id="toggle-style" style="position:fixed;top:18px;right:18px;z-index:999;padding:10px 18px;font-size:1rem;">Toggle Style</button>
-		<script>
-			document.getElementById('toggle-style').onclick = function() {
-				var link = document.getElementById('main-style');
-				link.href = link.href.includes('firstSketch.css') ? 'secondSketch.css' : 'firstSketch.css';
-			};
-		</script>
-	<div align="center">
-		<table>
-			<tr>
-				<td><a href="index.html"><button>Home</button></a></td>
-				<td><a href="qualifications.html"><button>Qualifications</button></a></td>
-				<td><a href="portfolio.html"><button>Portfolio</button></a></td>
-				<td><a href="service.html"><button>Service</button></a></td>
-				<td><a href="genai.html"><button>AI Page</button></a></td>
-			</tr>
-		</table>
-	</div>
+	<div class="main-container">
+		<div class="top-buttons"align="center">
+			<table>
+				<tr>
+					<td><a href="index.html"><button>Home</button></a></td>
+					<td><a href="qualifications.html"><button>Qualifications</button></a></td>
+					<td><a href="portfolio.html"><button>Portfolio</button></a></td>
+					<td><a href="service.html"><button>Service</button></a></td>
+					<td><a href="genai.html"><button>AI Page</button></a></td>
+					<td><a onclick="toggleStyle()"><button>Toggle Style</button></a></td>
+				</tr>
+			</table>
+		</div>
 	<br>
 
-	<div align="center">
+	<div class="content-container">
+	<div  align="center">
 		<div class="intro-flex">
 			<div class="intro-img">
 				<img src="SaketMugundaHeadShot.jpg" alt="Headshot" class="headshot">
@@ -39,39 +35,83 @@
 	</div>
 	<br>
 	<!-- What I Bring Section -->
-	<div align="center">
-		<h1>What I Bring</h1>
-		<div class="what-bring-row">
-			<a href="portfolio.html"><button class="what-bring-btn projects-btn">Projects</button></a>
-			<a href="qualifications.html"><button class="what-bring-btn resume-btn">Resume</button></a>
-			<a href="service.html"><button class="what-bring-btn service-btn">Community Work</button></a>
-			<a href="genai.html"><button class="what-bring-btn ai-btn">AI</button></a>
+	<div class="secondSketchLeft">
+		<div align="center">
+			<h1>What I Bring</h1>
+			<div class="what-bring-row">
+				<a href="portfolio.html"><button class="what-bring-btn projects-btn">Projects</button></a>
+				<a href="qualifications.html"><button class="what-bring-btn resume-btn">Resume</button></a>
+				<a href="service.html"><button class="what-bring-btn service-btn">Community</button></a>
+				<a href="genai.html"><button class="what-bring-btn ai-btn">AI</button></a>
+			</div>
 		</div>
-	</div>
 
-	<br>
-	<!-- Favorite Highlight Section -->
-	<div align="center">
-		<h1>Favorite Highlight</h1>
-		<div class="favorite-highlight">
-			<p class="favorite-project-big">My favorite project was an automated feed generator I created for internal clients at Home Depot!</p>
-		</div>
-	</div>
-	<br>
+		<br>
+		<!-- Favorite Highlight Section -->
+		<!-- <div align="center">
+			<h1>Favorite Highlight</h1>
+			<div class="favorite-highlight">
+				<p class="favorite-project-big">My favorite project was an automated feed generator I created for internal clients at Home Depot!</p>
+			</div>
+		</div> -->
+		<br>
 
-	<!-- Fun Facts Section -->
-	<div align="center">
-		<h1>Fun Facts</h1>
-		<div class="fun-facts">
-			<div class="fun-fact-card">I am a Dallas Mavericks and Green Bay Packers fan!</div>
-			<div class="fun-fact-card">I have traveled to 6 continents (hoping for a 7th).</div>
+		<!-- Fun Facts Section -->
+		<div align="center">
+			<h1>Fun Facts</h1>
+			<div class="fun-facts">
+				<div class="fun-fact-card">I am a Dallas Mavericks and Green Bay Packers fan!</div>
+				<div class="fun-fact-card">I have traveled to 6 continents (hoping for a 7th).</div>
+			</div>
 		</div>
 	</div>
 	<br>
+	</div>
 
 	<!-- Footer -->
 	<footer>
-		<p>Contact: saketmugunda123@gmail.com</p>
+		<div class="contact-info">
+			<a href="https://gmail.com" target="_blank" class="contact-item">
+				<span>📧</span>
+				<span>saketmugunda123@gmail.com</span>
+			</a>
+			<a href="https://www.tamu.edu/index.html" target="_blank" class="contact-item">
+				<span>🎓</span>
+				<span>Texas A&M University</span>
+			</a>
+			<a href="https://www.linkedin.com/in/saket-mugunda/" target="_blank" class="contact-item">
+				<img src="LinkedInLogo.png" alt="LinkedIn">
+				<span>LinkedIn</span>
+			</a>
+		</div>
 	</footer>
+	</div>
+
+	<script>
+		// Function to toggle between CSS styles
+		function toggleStyle() {
+			const styleLink = document.getElementById('main-style');
+			const currentStyle = styleLink.getAttribute('href');
+			
+			if (currentStyle === 'secondSketch.css') {
+				styleLink.setAttribute('href', 'firstSketch.css');
+				localStorage.setItem('selectedStyle', 'firstSketch.css');
+			} else {
+				styleLink.setAttribute('href', 'secondSketch.css');
+				localStorage.setItem('selectedStyle', 'secondSketch.css');
+			}
+		}
+
+		// Function to load the saved style on page load
+		function loadSavedStyle() {
+			const savedStyle = localStorage.getItem('selectedStyle');
+			if (savedStyle) {
+				document.getElementById('main-style').setAttribute('href', savedStyle);
+			}
+		}
+
+		// Load saved style when page loads
+		document.addEventListener('DOMContentLoaded', loadSavedStyle);
+	</script>
 </body>
 </html>

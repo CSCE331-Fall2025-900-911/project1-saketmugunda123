@@ -1,28 +1,242 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GenAI Page</title>
-    <link rel="stylesheet" href="firstSketch.css">
+    <title>AI-Powered Saket Mugunda Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div align="center">
-        <table>
-            <tr>
-                <td><a href="index.html"><button>Home</button></a></td>
-                <td><a href="qualifications.html"><button>Qualifications</button></a></td>
-                <td><a href="portfolio.html"><button>Portfolio</button></a></td>
-                <td><a href="service.html"><button>Service</button></a></td>
-                <td><a href="genai.html"><button>AI Page</button></a></td>
-            </tr>
-        </table>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%); color: #ffffff; overflow-x: hidden;">
+    
+    <!-- Animated Background -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;">
+        <div style="position: absolute; width: 200%; height: 200%; background-image: radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(120, 200, 255, 0.3) 0%, transparent 50%); animation: float 20s ease-in-out infinite;"></div>
     </div>
-    <br>
-    <div align="center">
-        <h1 class="genai-coming">Coming Soon</h1>
-    </div>
-    <br>
-    <footer align="center">
-        <p>Contact: saketmugunda123@gmail.com</p>
+
+    <!-- Navigation -->
+    <nav style="position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px); background: rgba(0, 0, 0, 0.3); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 15px 0;">
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="index.html" style="text-decoration: none; color: #00d4ff; padding: 10px 20px; border-radius: 25px; border: 1px solid rgba(0, 212, 255, 0.3); transition: all 0.3s ease; background: rgba(0, 212, 255, 0.1);" onmouseover="this.style.background='rgba(0, 212, 255, 0.3)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(0, 212, 255, 0.1)'; this.style.transform='translateY(0)'">🏠 Home</a>
+            <a href="qualifications.html" style="text-decoration: none; color: #ff6b6b; padding: 10px 20px; border-radius: 25px; border: 1px solid rgba(255, 107, 107, 0.3); transition: all 0.3s ease; background: rgba(255, 107, 107, 0.1);" onmouseover="this.style.background='rgba(255, 107, 107, 0.3)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 107, 107, 0.1)'; this.style.transform='translateY(0)'">🎓 Qualifications</a>
+            <a href="portfolio.html" style="text-decoration: none; color: #4ecdc4; padding: 10px 20px; border-radius: 25px; border: 1px solid rgba(78, 205, 196, 0.3); transition: all 0.3s ease; background: rgba(78, 205, 196, 0.1);" onmouseover="this.style.background='rgba(78, 205, 196, 0.3)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(78, 205, 196, 0.1)'; this.style.transform='translateY(0)'">💼 Portfolio</a>
+            <a href="service.html" style="text-decoration: none; color: #ffe66d; padding: 10px 20px; border-radius: 25px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease; background: rgba(255, 230, 109, 0.1);" onmouseover="this.style.background='rgba(255, 230, 109, 0.3)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 230, 109, 0.1)'; this.style.transform='translateY(0)'">🤝 Service</a>
+            <a href="genai.html" style="text-decoration: none; color: #a8e6cf; padding: 10px 20px; border-radius: 25px; border: 1px solid rgba(168, 230, 207, 0.3); transition: all 0.3s ease; background: rgba(168, 230, 207, 0.3);" onmouseover="this.style.background='rgba(168, 230, 207, 0.5)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(168, 230, 207, 0.3)'; this.style.transform='translateY(0)'">🤖 AI Experience</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="text-align: center; padding: 80px 20px; position: relative;">
+        <div style="display: inline-block; position: relative; margin-bottom: 30px;">
+            <img src="SaketMugundaHeadShot.jpg" alt="Saket Mugunda" style="width: 200px; height: 200px; border-radius: 50%; border: 4px solid #00d4ff; box-shadow: 0 0 30px rgba(0, 212, 255, 0.5); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 40px rgba(0, 212, 255, 0.8)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 30px rgba(0, 212, 255, 0.5)'">
+            <div style="position: absolute; top: -10px; right: -10px; width: 40px; height: 40px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; animation: pulse 2s infinite;">🤖</div>
+        </div>
+        <h1 style="font-size: 3.5em; margin: 20px 0; background: linear-gradient(45deg, #00d4ff, #ff6b6b, #4ecdc4, #ffe66d); background-size: 400% 400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradient 3s ease infinite; text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);">SAKET MUGUNDA</h1>
+        <p style="font-size: 1.5em; margin: 20px auto; max-width: 800px; line-height: 1.6; color: #b8b8b8;">Texas A&M Computer Science Honors Student | AI/ML Enthusiast | Full-Stack Developer</p>
+        <div style="margin-top: 40px;">
+            <span style="display: inline-block; padding: 15px 30px; background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); border-radius: 30px; margin: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.3)'">🏀 Dallas Mavericks Fan</span>
+            <span style="display: inline-block; padding: 15px 30px; background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); border-radius: 30px; margin: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.3)'">🌍 6 Continents Explored</span>
+        </div>
+    </section>
+
+    <!-- AI-Powered Skills Matrix -->
+    <section style="padding: 60px 20px; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); margin: 40px 20px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.1);">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #00d4ff;">⚡ Technical Arsenal</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <div style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 212, 255, 0.05)); padding: 30px; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0, 212, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <h3 style="color: #00d4ff; margin-bottom: 20px; font-size: 1.3em;">🧠 AI/ML Core</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span style="background: rgba(0, 212, 255, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">LLMs</span>
+                    <span style="background: rgba(0, 212, 255, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">LangChain</span>
+                    <span style="background: rgba(0, 212, 255, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">BERT</span>
+                    <span style="background: rgba(0, 212, 255, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">PyTorch</span>
+                    <span style="background: rgba(0, 212, 255, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Scikit-learn</span>
+                </div>
+            </div>
+            <div style="background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05)); padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 107, 107, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(255, 107, 107, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <h3 style="color: #ff6b6b; margin-bottom: 20px; font-size: 1.3em;">💻 Programming</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span style="background: rgba(255, 107, 107, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Python</span>
+                    <span style="background: rgba(255, 107, 107, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Java</span>
+                    <span style="background: rgba(255, 107, 107, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">JavaScript</span>
+                    <span style="background: rgba(255, 107, 107, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">C++</span>
+                    <span style="background: rgba(255, 107, 107, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">SQL</span>
+                </div>
+            </div>
+            <div style="background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(78, 205, 196, 0.05)); padding: 30px; border-radius: 20px; border: 1px solid rgba(78, 205, 196, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(78, 205, 196, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <h3 style="color: #4ecdc4; margin-bottom: 20px; font-size: 1.3em;">🌐 Web Tech</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span style="background: rgba(78, 205, 196, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">React</span>
+                    <span style="background: rgba(78, 205, 196, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Angular</span>
+                    <span style="background: rgba(78, 205, 196, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">TypeScript</span>
+                    <span style="background: rgba(78, 205, 196, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">NodeJS</span>
+                </div>
+            </div>
+            <div style="background: linear-gradient(135deg, rgba(255, 230, 109, 0.1), rgba(255, 230, 109, 0.05)); padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(255, 230, 109, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <h3 style="color: #ffe66d; margin-bottom: 20px; font-size: 1.3em;">☁️ Cloud/DevOps</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span style="background: rgba(255, 230, 109, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">AWS</span>
+                    <span style="background: rgba(255, 230, 109, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Docker</span>
+                    <span style="background: rgba(255, 230, 109, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Kubernetes</span>
+                    <span style="background: rgba(255, 230, 109, 0.2); padding: 8px 16px; border-radius: 15px; font-size: 0.9em;">Google Cloud</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section style="padding: 60px 20px;">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #ff6b6b;">🚀 Innovation Lab</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 1400px; margin: 0 auto;">
+            
+            <!-- NBA Prop Predictor -->
+            <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-10px) rotateX(5deg)'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.3)'" onmouseout="this.style.transform='translateY(0) rotateX(0)'; this.style.boxShadow='none'">
+                <div style="position: absolute; top: -50%; right: -50%; width: 100%; height: 100%; background: linear-gradient(45deg, transparent, rgba(0, 212, 255, 0.1), transparent); transform: rotate(45deg); transition: all 0.5s ease;"></div>
+                <h3 style="color: #00d4ff; font-size: 1.5em; margin-bottom: 15px;">🏀 NBA Prop Predictor</h3>
+                <p style="color: #b8b8b8; margin-bottom: 20px; line-height: 1.6;">AI-powered sports analytics platform achieving 63% accuracy with LangChain conversational AI and deep neural networks.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                    <span style="background: rgba(0, 212, 255, 0.2); color: #00d4ff; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">LangChain</span>
+                    <span style="background: rgba(0, 212, 255, 0.2); color: #00d4ff; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">AWS</span>
+                    <span style="background: rgba(0, 212, 255, 0.2); color: #00d4ff; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">Neural Networks</span>
+                </div>
+                <a href="https://github.com/saketmugunda123/LangChain-Sports-Predictor" target="_blank" style="text-decoration: none; color: #00d4ff; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#00d4ff'">
+                    <img src="GitHub-logo.jpg" alt="GitHub" style="width: 20px; height: 20px; border-radius: 3px;">
+                    View Project →
+                </a>
+            </div>
+
+            <!-- Home Depot -->
+            <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-10px) rotateX(5deg)'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.3)'" onmouseout="this.style.transform='translateY(0) rotateX(0)'; this.style.boxShadow='none'">
+                <div style="position: absolute; top: -50%; right: -50%; width: 100%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255, 107, 107, 0.1), transparent); transform: rotate(45deg); transition: all 0.5s ease;"></div>
+                <h3 style="color: #ff6b6b; font-size: 1.5em; margin-bottom: 15px;">🏪 Home Depot Engineering</h3>
+                <p style="color: #b8b8b8; margin-bottom: 20px; line-height: 1.6;">Reduced client onboarding by 86% with automated feed generator. Built BERT model with 98% accuracy for 100k+ products.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                    <span style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">BERT</span>
+                    <span style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">CI/CD</span>
+                    <span style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">Kubernetes</span>
+                </div>
+                <a href="https://www.homedepot.com" target="_blank" style="text-decoration: none; color: #ff6b6b; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#ff6b6b'">
+                    <img src="HomeDepot.png" alt="Home Depot" style="width: 20px; height: 20px; border-radius: 3px;">
+                    Learn More →
+                </a>
+            </div>
+
+            <!-- Clocr -->
+            <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-10px) rotateX(5deg)'; this.style.boxShadow='0 30px 60px rgba(0, 0, 0, 0.3)'" onmouseout="this.style.transform='translateY(0) rotateX(0)'; this.style.boxShadow='none'">
+                <div style="position: absolute; top: -50%; right: -50%; width: 100%; height: 100%; background: linear-gradient(45deg, transparent, rgba(78, 205, 196, 0.1), transparent); transform: rotate(45deg); transition: all 0.5s ease;"></div>
+                <h3 style="color: #4ecdc4; font-size: 1.5em; margin-bottom: 15px;">🎨 Clocr Startup</h3>
+                <p style="color: #b8b8b8; margin-bottom: 20px; line-height: 1.6;">Digital asset management platform serving 100k+ users. Reduced operational costs by 30% through database migration.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                    <span style="background: rgba(78, 205, 196, 0.2); color: #4ecdc4; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">Angular</span>
+                    <span style="background: rgba(78, 205, 196, 0.2); color: #4ecdc4; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">PostgreSQL</span>
+                    <span style="background: rgba(78, 205, 196, 0.2); color: #4ecdc4; padding: 4px 12px; border-radius: 12px; font-size: 0.8em;">LLMs</span>
+                </div>
+                <a href="https://clocr.com" target="_blank" style="text-decoration: none; color: #4ecdc4; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#4ecdc4'">
+                    <img src="Clocr.jpg" alt="Clocr" style="width: 20px; height: 20px; border-radius: 3px;">
+                    Visit Clocr →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact -->
+    <section style="padding: 60px 20px; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); margin: 40px 20px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.1);">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #ffe66d;">🌟 Community Impact</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto;">
+            
+            <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(255, 230, 109, 0.1), rgba(255, 230, 109, 0.05)); border-radius: 20px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 30px rgba(255, 230, 109, 0.2)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                <img src="NorthSouthFoundation.png" alt="NSF" style="width: 60px; height: 60px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #ffe66d; margin-bottom: 10px;">North South Foundation</h3>
+                <p style="color: #b8b8b8; font-size: 0.9em;">Volunteer Judge for Spelling & Math Bee Competitions</p>
+            </div>
+
+            <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(255, 230, 109, 0.1), rgba(255, 230, 109, 0.05)); border-radius: 20px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 30px rgba(255, 230, 109, 0.2)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                <img src="RoundRockServingCenter.jpg" alt="RRSC" style="width: 60px; height: 60px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #ffe66d; margin-bottom: 10px;">Round Rock Serving Center</h3>
+                <p style="color: #b8b8b8; font-size: 0.9em;">Food Pantry & Community Support Volunteer</p>
+            </div>
+
+            <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(255, 230, 109, 0.1), rgba(255, 230, 109, 0.05)); border-radius: 20px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 30px rgba(255, 230, 109, 0.2)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                <img src="educationist_tutoring_logo.jpg" alt="Educationist" style="width: 60px; height: 60px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #ffe66d; margin-bottom: 10px;">Educationist Tutoring</h3>
+                <p style="color: #b8b8b8; font-size: 0.9em;">Social Media Manager & Personal Tutor</p>
+            </div>
+
+            <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(255, 230, 109, 0.1), rgba(255, 230, 109, 0.05)); border-radius: 20px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 30px rgba(255, 230, 109, 0.2)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+                <img src="Atlanta.png" alt="Atlanta" style="width: 60px; height: 60px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #ffe66d; margin-bottom: 10px;">Community Beautification</h3>
+                <p style="color: #b8b8b8; font-size: 0.9em;">City of Atlanta & Home Depot Partnership</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Philosophy -->
+    <section style="padding: 60px 20px; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, rgba(168, 230, 207, 0.1), rgba(168, 230, 207, 0.05)); backdrop-filter: blur(10px); border-radius: 30px; padding: 50px; border: 1px solid rgba(168, 230, 207, 0.3);">
+            <h2 style="font-size: 2.5em; margin-bottom: 30px; color: #a8e6cf;">🧠 AI Philosophy</h2>
+            <blockquote style="font-size: 1.3em; font-style: italic; line-height: 1.8; color: #ffffff; margin: 0; border-left: 4px solid #a8e6cf; padding-left: 30px; text-align: left;">
+                "I am extremely interested in Agentic AI because it's the first proper step toward an AI integrated society. Rather than the regular LLM that serves as a glorified search engine, Agentic AI has revolutionized the tech space because it enables AI to not only think, but perform human-like actions. It truly is the cutting edge of AI progression."
+            </blockquote>
+            <div style="margin-top: 30px; font-size: 1.1em; color: #a8e6cf;">- Saket Mugunda</div>
+        </div>
+    </section>
+
+    <!-- Prompt Section -->
+    <section style="padding: 60px 20px; background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); margin: 40px 20px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.1);">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #ff6b6b;">💭 The Prompt</h2>
+        <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05)); backdrop-filter: blur(10px); border-radius: 20px; padding: 40px; border: 1px solid rgba(255, 107, 107, 0.3);">
+            <div style="background: rgba(0, 0, 0, 0.3); border-radius: 15px; padding: 30px; border-left: 4px solid #ff6b6b; font-family: 'Courier New', monospace;">
+                <p style="color: #ffffff; font-size: 1.2em; line-height: 1.7; margin: 0;">
+                    <span style="color: #ff6b6b; font-weight: bold;">1.</span> Carefully analyze all the information from my website and create this page. Be creative.<br><br>
+                    <span style="color: #ff6b6b; font-weight: bold;">2.</span> Keep a consistent theme across each section of the page
+                </p>
+            </div>
+            <div style="margin-top: 25px; text-align: center;">
+                <p style="color: #b8b8b8; font-style: italic; font-size: 1em;">
+                    This AI-generated page was created based on the above prompt, analyzing all content from the portfolio website to showcase Saket's achievements in a creative, futuristic design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); padding: 40px 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 20px;">
+            <a href="mailto:saketmugunda123@gmail.com" style="text-decoration: none; color: #00d4ff; display: flex; align-items: center; gap: 10px; padding: 15px 25px; background: rgba(0, 212, 255, 0.1); border-radius: 25px; border: 1px solid rgba(0, 212, 255, 0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(0, 212, 255, 0.2)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.background='rgba(0, 212, 255, 0.1)'; this.style.transform='translateY(0)'">
+                <span style="font-size: 1.2em;">📧</span>
+                <span>saketmugunda123@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/saket-mugunda/" target="_blank" style="text-decoration: none; color: #4ecdc4; display: flex; align-items: center; gap: 10px; padding: 15px 25px; background: rgba(78, 205, 196, 0.1); border-radius: 25px; border: 1px solid rgba(78, 205, 196, 0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(78, 205, 196, 0.2)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.background='rgba(78, 205, 196, 0.1)'; this.style.transform='translateY(0)'">
+                <img src="LinkedInLogo.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://www.tamu.edu/index.html" target="_blank" style="text-decoration: none; color: #ffe66d; display: flex; align-items: center; gap: 10px; padding: 15px 25px; background: rgba(255, 230, 109, 0.1); border-radius: 25px; border: 1px solid rgba(255, 230, 109, 0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255, 230, 109, 0.2)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.background='rgba(255, 230, 109, 0.1)'; this.style.transform='translateY(0)'">
+                <span style="font-size: 1.2em;">🎓</span>
+                <span>Texas A&M University</span>
+            </a>
+        </div>
+        <p style="color: #888; margin: 0; font-size: 0.9em;">Created with ❤️ and AI • © 2025 Saket Mugunda</p>
     </footer>
+
+    <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+            33% { transform: translateX(-50%) translateY(-50%) rotate(120deg); }
+            66% { transform: translateX(-50%) translateY(-50%) rotate(240deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+    </style>
 </body>
 </html>
