@@ -304,7 +304,6 @@ body {
     color: #5d4e37;
 }
 
-/* Service Grid Layout */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -314,7 +313,7 @@ body {
     margin: 0 auto;
 }
 
-/* Service Box Styling */
+
 .service-box {
     background: linear-gradient(135deg, #faf7f0 0%, #f0ead6 100%);
     border: 2px solid #8b4513;
@@ -361,7 +360,6 @@ body {
     transform: translateX(-50%);
 }
 
-/* Project Grid Layout */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -371,7 +369,7 @@ body {
     margin: 0 auto;
 }
 
-/* Project Box Styling */
+
 .project-box {
     background: linear-gradient(135deg, #faf7f0 0%, #f0ead6 100%);
     border: 2px solid #8b4513;
@@ -418,7 +416,7 @@ body {
     transform: translateX(-50%);
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -518,7 +516,7 @@ body {
     margin-right: 10px;
 }
 
-/* Footer Styling */
+
 footer {
     background: linear-gradient(135deg, #f5f0e8 0%, #ebe1d1 100%);
     border-top: 3px solid #8b4513;

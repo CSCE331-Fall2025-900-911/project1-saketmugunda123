@@ -73,12 +73,12 @@
     color: #222;
 }
 
-/* Accent color variable */
+
 :root {
     --accent: #005fa3;
 }
 
-/* firstSketch.css - Styles extracted from HTML files */
+
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -87,7 +87,7 @@ body {
     padding: 0;
 }
 
-/* Navigation buttons */
+
 button {
     width: 160px;
     height: 60px;
@@ -111,7 +111,6 @@ button:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Home page circular image */
 .headshot {
     border-radius: 50%;
     width: 350px;
@@ -127,7 +126,7 @@ button:hover {
     margin: 24px 0;
 }
 
-/* What I Bring section buttons */
+
 .what-bring-btn {
     width: 110px;
     height: 110px;
@@ -237,7 +236,6 @@ button:hover {
     font-weight: 500;
 }
 
-/* Technical Skills Block - Compact styling */
 .tech-skills-block {
     border: 2px solid var(--accent);
     width: 300px;
@@ -405,7 +403,7 @@ footer .contact-item img {
     height: 20px;
 }
 
-/* Service Grid Layout */
+
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -415,7 +413,7 @@ footer .contact-item img {
     margin: 0 auto;
 }
 
-/* Service Box Styling */
+
 .service-box {
     background: #fff;
     border: 2px solid var(--accent);
@@ -462,7 +460,7 @@ footer .contact-item img {
     transform: translateX(-50%);
 }
 
-/* Project Grid Layout */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -472,7 +470,6 @@ footer .contact-item img {
     margin: 0 auto;
 }
 
-/* Project Box Styling */
 .project-box {
     background: #fff;
     border: 2px solid var(--accent);
@@ -619,7 +616,7 @@ footer .contact-item img {
     margin-right: 10px;
 }
 
-/* Resume container styling */
+
 .resume-container {
     width: 100%;
     display: flex;
